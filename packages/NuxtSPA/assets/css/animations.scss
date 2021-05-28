@@ -1,0 +1,33 @@
+.nts-fade-in{
+    animation: ntsFadeIn 0.5s;
+}
+.nts-fade-out{
+    animation: ntsFadeIn 0.5s reverse forwards !important;
+}
+.nts-to-top{
+    animation:  ntsToTop 0.5s ;
+}
+@keyframes ntsToTop{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes ntsFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes ntsFadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

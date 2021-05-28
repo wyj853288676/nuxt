@@ -1,0 +1,25 @@
+{
+  "name": "newniti_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "egg-bin": "^4.15.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "egg": "^2.29.3",
+    "egg-mongoose": "^3.3.1",
+    "egg-passport": "^2.1.1",
+    "egg-passport-local": "^1.2.1",
+    "egg-validate": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}

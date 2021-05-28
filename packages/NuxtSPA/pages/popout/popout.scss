@@ -1,0 +1,9 @@
+#__layout {
+    min-width: 250px;
+    &>div {
+        width: 100%;
+    }
+}
+body{
+    min-height: 100vh;
+}

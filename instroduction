@@ -1,0 +1,11 @@
+## create a nuxt app ##
+npm init nuxt-app your_app's_name
+
+## to get started ##
+cd your_dir
+npm run dev
+
+## to build & start for production ##
+cd your_dir
+npm run build
+npm run start

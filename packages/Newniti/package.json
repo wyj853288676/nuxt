@@ -1,0 +1,38 @@
+{
+  "name": "Newniti",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start-debug": "set NODE_ENV=development&&set mockMode=true&&node --inspect-brk=9339 app.js",
+    "build-report": "npm run build --report",
+    "start": "set NODE_ENV=development&&set mockMode=true&&node  app.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.16",
+    "@nuxtjs/proxy": "^2.1.0",
+    "ant-design-vue": "^1.7.4",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "co": "^4.6.0",
+    "core-js": "^3.8.3",
+    "css": "^3.0.0",
+    "decimal.js": "^10.2.1",
+    "element-ui": "^2.15.1",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.3",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "webpack-bundle-analyzer": "^4.4.0"
+  }
+}

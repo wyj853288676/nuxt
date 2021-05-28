@@ -1,0 +1,33 @@
+.nwt-fade-in{
+    animation: nwtFadeIn 0.5s;
+}
+.nwt-fade-out{
+    animation: nwtFadeIn 0.5s reverse forwards !important;
+}
+.nwt-to-top{
+    animation:  nwtToTop 0.5s ;
+}
+@keyframes nwtToTop{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes nwtFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes nwtFadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

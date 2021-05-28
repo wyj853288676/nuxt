@@ -1,0 +1,84 @@
+#__nuxt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 200px;
+}
+#__layout {
+    width: 100%;
+}
+main {
+    width: 600px;
+    max-width: 90%;
+    margin: auto;
+    min-width: auto !important;
+    position: relative;
+}
+
+#login-card {
+    cursor: default;
+    .login-title {
+        font-weight: normal;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .text-muted {
+        color: #7c8089;
+    }
+
+    .input-container {
+        margin-bottom: 1em;
+        input {
+            font-size: 14px;
+            background: transparent;
+            border: transparent;
+            border: 1px solid #c3c6cf;
+            border-radius: 3px;
+            outline: 0 !important;
+            box-shadow: none;
+            padding: 0px 0;
+            height: 46px;
+            transition: linear 0.5s;
+            padding-left: 3em;
+            &:focus {
+                border: 1px solid #474d5b;
+                color: #464e60;
+                box-shadow: 0px 5px 10px rgb(45 50 64 / 20%);
+            }
+        }
+        .el-input__prefix {
+            width: 3em;
+        }
+    }
+    .input-title {
+        margin-bottom: 1em;
+        font-weight: normal;
+    }
+    .btn-main {
+        border-radius: 2px;
+        width: 100%;
+        margin-top: 1.5em;
+        padding: 15px 20px;
+        box-shadow: 0 5px 9px rgba(64, 160, 255, 0.5);
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 0 5px 9px rgba(64, 160, 255, 0.5), 0 5px 30px rgba(64, 160, 255, 0.5);
+            background: #409eff;
+        }
+    }
+    #login-form,
+    #register-form {
+        animation: fadeIn 0.5s;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}

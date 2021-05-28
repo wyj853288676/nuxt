@@ -1,0 +1,13 @@
+.nts-light {
+    background: rgba(0,0,0,0.1);
+    background-image: radial-gradient(0.3em 0.25em at 50% 25%, rgb(255, 255, 255) 25%, rgba(255, 255, 255, 0)),
+        radial-gradient(0.25em 0.25em at 30% 75%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)),
+        radial-gradient(0.3em 0.3em at 60% 80%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)),
+        radial-gradient(0em 0em at 100% 100%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.3) 40%, rgba(0, 0, 0, 0.5) 50%);
+    border-radius: 50%;
+    // box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    transition: all 0.3s;
+    width: 1em;
+    height: 1em;
+}

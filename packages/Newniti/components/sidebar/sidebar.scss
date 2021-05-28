@@ -1,0 +1,77 @@
+div.nwt-sidebar {
+    position: fixed;
+    right: -1px;
+    height: 100%;
+    top: 0px;
+    border-left: 1px solid #eee;
+    display: flex;
+    background-color: white;
+    z-index: 99;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+    color: #555;
+    .nts-sidebar-content {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        transition: all 0.3s;
+        transform: translateX(calc(100% + 1px));
+        background-color: white;
+        &:not(:hover) {
+            // opacity: 0.8;
+        }
+        &[active="true"] {
+            transform: translateX(0px);
+            right: 100%;
+            box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.05);
+        }
+    }
+    .nwt-sidebar-close-icon {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        font-size: 1.2em;
+        cursor: pointer;
+        width: 1.2em;
+        height: 1.2em;
+        background: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+}
+
+ul.nts-sidebar-ul {
+    padding-left: 0px;
+    list-style: none;
+    z-index: 1;
+    li {
+        width: 4em;
+        height: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i.nts-sidebar-icon {
+            font-size: 1.25em;
+        }
+        button {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 100%;
+            transition: all 0.3s;
+            padding: 0px;
+            &:not(:hover) {
+                background-color: white;
+            }
+        }
+        &.active button {
+            border-radius: 0px;
+            background-color: #ecf5ff;
+            color: #409eff;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.widget-price-card {
+    position: relative;
+}
+
+.widget-price-card,
+.widget-price-card-body,
+.widget-price-card-init {
+    height: 100%;
+    width: 100%;
+}
+
+.widget-price-card-init {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.widget-price-card-body {
+    display: grid;
+    grid-template: 1fr 120px 1fr / 1fr 1fr 130px;
+    grid-template-areas:
+        "pair pair tenor"
+        "chart chart trade"
+        "price price price";
+    padding: 0px 10px 5px 10px;
+    grid-gap: 2px;
+
+    .hide-border {
+        .el-input__inner {
+
+            // transition: border-color 0.3s;
+            &:not(:hover) {
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+.widget-price-card-pair {
+    grid-area: pair;
+}
+
+.widget-price-card-tenor {
+    grid-area: tenor;
+}
+
+.widget-price-card-chart {
+    grid-area: chart;
+
+    .widget-price-card-chart-sider {
+        width: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: center;
+
+        * {
+            display: block;
+            width: 100%;
+            transition: all 0.1s;
+        }
+    }
+}
+
+.widget-price-card-trade {
+    grid-area: trade;
+    width: 100%;
+    height: 100%;
+
+    .widget-price-card-trade-card {
+        width: 100%;
+        height: 50%;
+        margin: 3px 0px;
+        transition: all 0.3s;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .trade-title {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        opacity: 0.5;
+    }
+
+    .price-number-container {
+        width: auto;
+        height: 100%;
+        font-size: 8px;
+    }
+
+    .price-number {
+        cursor: pointer;
+    }
+
+    .price-number .big-number {
+        font-size: 2.5em;
+    }
+}
+
+.widget-price-card:hover {
+    .widget-price-card-trade-card {
+        background-color: rgba(15, 15, 15, 0.1);
+    }
+}
+
+.widget-price-card-price {
+    grid-area: price;
+}
+
+.widget-price-card-trade-card[type="sell"]:hover {
+    background-color: var(--sell-color) !important;
+    color: white;
+}
+
+.widget-price-card-trade-card[type="buy"]:hover {
+    color: white;
+    background-color: var(--buy-color) !important;
+}
+
+.widget-price-card-chart-alert {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+// grid view
+
+.widget-price-card[price-not-available="true"] {
+    .widget-price-card-trade-card {
+        border: 1px solid rgb(0, 0, 0, 10%);
+
+        .trade-title,
+        .price-number-container {
+            display: none !important;
+        }
+    }
+}
+
+.icon-price-not-available {
+    font-size: 1.5em;
+    height: 1.5em;
+    opacity: 0.8;
+    display: inline-flex;
+    align-items: center;
+}

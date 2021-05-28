@@ -1,0 +1,37 @@
+div.nts-compass-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+div.nts-compass-card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    position: absolute;
+    background: white;
+    cursor: default;
+    border-radius: 5px;
+    color: black;
+    // transition: all 0.3s, transform 0s, z-index 0s;
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+div.nts-compass-card:hover {
+    z-index: 100 !important;
+    box-shadow: 0px 0px 10px #eee;
+    // opacity: 0.95;
+}
+
+
+.nts-compass-card-footer button{
+    margin: 0px 40px;
+}

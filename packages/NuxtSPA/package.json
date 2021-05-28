@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.16",
+    "ant-design-vue": "^1.7.4",
+    "core-js": "^3.8.3",
+    "css": "^3.0.0",
+    "element-ui": "^2.15.1",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0"
+  }
+}
